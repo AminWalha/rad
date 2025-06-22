@@ -2,33 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>No Banner, No Top Space</title>
+  <title>Website Shifted Up</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      width: 100%;
       height: 100%;
+      width: 100%;
       box-sizing: border-box;
     }
-    /* Remove any possible banner or spacer elements */
-    .banner, .header, .spacer {
-      display: none !important;
-      height: 0 !important;
-      margin: 0 !important;
-      padding: 0 !important;
-    }
-    /* Responsive fix for all screen sizes */
-    @media (max-width: 1000px) {
-      .banner, .header, .spacer {
-        display: none !important;
-        height: 0 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-      }
-    }
-    .iframe-container {
+    .main-content {
+      margin-top: -50px;
       width: 100vw;
       height: 100vh;
       overflow: hidden;
@@ -42,7 +27,7 @@
   </style>
 </head>
 <body>
-  <div class="iframe-container">
+  <div class="main-content">
     <iframe src="https://awalha.wixsite.com/radiologique" allowfullscreen></iframe>
   </div>
 </body>
